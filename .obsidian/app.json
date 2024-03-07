@@ -1,0 +1,14 @@
+{
+  "alwaysUpdateLinks": true,
+  "promptDelete": false,
+  "showInlineTitle": true,
+  "strictLineBreaks": false,
+  "focusNewTab": true,
+  "spellcheck": false,
+  "showLineNumber": false,
+  "trashOption": "none",
+  "attachmentFolderPath": "./",
+  "newFileLocation": "current",
+  "smartIndentList": true,
+  "rightToLeft": false
+}

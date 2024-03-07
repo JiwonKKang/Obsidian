@@ -1,0 +1,141 @@
+{
+  "main": {
+    "id": "085b9d886b5132c5",
+    "type": "split",
+    "children": [
+      {
+        "id": "a58e3c02c82eb3cc",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "77a322f7366e055c",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "1. Project/Cercat/부딪힌 문제들.md",
+                "mode": "source",
+                "backlinks": false,
+                "source": false
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "858f4975c4898ff4",
+    "type": "mobile-drawer",
+    "children": [
+      {
+        "id": "8f9a8714028419f9",
+        "type": "leaf",
+        "state": {
+          "type": "file-explorer",
+          "state": {
+            "sortOrder": "alphabetical"
+          }
+        }
+      },
+      {
+        "id": "804caff1f77a2828",
+        "type": "leaf",
+        "state": {
+          "type": "search",
+          "state": {
+            "query": "",
+            "matchingCase": false,
+            "explainSearch": false,
+            "collapseAll": false,
+            "extraContext": false,
+            "sortOrder": "alphabetical"
+          }
+        }
+      },
+      {
+        "id": "5c5740b96833565f",
+        "type": "leaf",
+        "state": {
+          "type": "tag",
+          "state": {
+            "sortOrder": "frequency",
+            "useHierarchy": true
+          }
+        }
+      },
+      {
+        "id": "22ebe3dbef22c65a",
+        "type": "leaf",
+        "state": {
+          "type": "bookmarks",
+          "state": {}
+        }
+      }
+    ],
+    "currentTab": 0
+  },
+  "right": {
+    "id": "854f182e0a7afb4d",
+    "type": "mobile-drawer",
+    "children": [
+      {
+        "id": "5ea809016a8a9b29",
+        "type": "leaf",
+        "state": {
+          "type": "backlink",
+          "state": {
+            "collapseAll": false,
+            "extraContext": false,
+            "sortOrder": "alphabetical",
+            "showSearch": false,
+            "searchQuery": "",
+            "backlinkCollapsed": false,
+            "unlinkedCollapsed": true
+          }
+        }
+      },
+      {
+        "id": "72e949263167bc91",
+        "type": "leaf",
+        "state": {
+          "type": "outgoing-link",
+          "state": {
+            "file": "1. Project/Cercat/부딪힌 문제들.md",
+            "linksCollapsed": false,
+            "unlinkedCollapsed": true
+          }
+        }
+      },
+      {
+        "id": "b29a03aee88f0baf",
+        "type": "leaf",
+        "state": {
+          "type": "outline",
+          "state": {
+            "file": "1. Project/Cercat/부딪힌 문제들.md"
+          }
+        }
+      }
+    ],
+    "currentTab": 0
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false,
+      "obsidian-projects:Open projects": false
+    }
+  },
+  "active": "77a322f7366e055c",
+  "lastOpenFiles": [
+    "1. Project/Cercat/Project Management/모의고사 문제 Redis 캐싱.md",
+    "1. Project/Cercat/개선 사항.md",
+    "Template"
+  ]
+}

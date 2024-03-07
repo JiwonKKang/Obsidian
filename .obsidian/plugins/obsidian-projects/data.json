@@ -1,0 +1,254 @@
+{
+  "version": 2,
+  "projects": [
+    {
+      "fieldConfig": {},
+      "defaultName": "",
+      "templates": [
+        "Project/Cercat/무제 파일.md"
+      ],
+      "excludedNotes": [],
+      "isDefault": false,
+      "dataSource": {
+        "kind": "folder",
+        "config": {
+          "path": "1. Project/Cercat/Project Management",
+          "recursive": true
+        }
+      },
+      "newNotesFolder": "",
+      "views": [
+        {
+          "config": {
+            "fieldConfig": {
+              "path": {
+                "hide": true
+              },
+              "name": {
+                "width": 243
+              }
+            },
+            "orderFields": [
+              "name",
+              "종류",
+              "마감",
+              "긴급",
+              "완료 여부",
+              "완료여부"
+            ]
+          },
+          "filter": {
+            "conditions": [
+              {
+                "field": "완료 여부",
+                "operator": "is-not-checked",
+                "enabled": true
+              }
+            ]
+          },
+          "colors": {
+            "conditions": []
+          },
+          "sort": {
+            "criteria": [
+              {
+                "field": "마감",
+                "order": "asc",
+                "enabled": true
+              },
+              {
+                "field": "긴급",
+                "order": "desc",
+                "enabled": true
+              }
+            ]
+          },
+          "id": "d09d6c3c-405c-4e20-87e2-6b090cc41ae4",
+          "name": "Table",
+          "type": "table"
+        },
+        {
+          "config": {
+            "interval": "month"
+          },
+          "filter": {
+            "conditions": []
+          },
+          "colors": {
+            "conditions": [
+              {
+                "color": "#c680ff",
+                "condition": {
+                  "field": "상태",
+                  "operator": "is",
+                  "enabled": true,
+                  "value": "todo"
+                }
+              },
+              {
+                "color": "#88ff80",
+                "condition": {
+                  "field": "상태",
+                  "operator": "is",
+                  "enabled": true,
+                  "value": "done"
+                }
+              }
+            ]
+          },
+          "sort": {
+            "criteria": []
+          },
+          "id": "6c850e58-6cf7-480c-bd87-e581b588815a",
+          "name": "Calender",
+          "type": "calendar"
+        }
+      ],
+      "id": "72b81e0c-54a1-4dcd-91aa-8556e4f44a70",
+      "name": "\bCercat"
+    },
+    {
+      "fieldConfig": {},
+      "defaultName": "",
+      "templates": [],
+      "excludedNotes": [],
+      "isDefault": false,
+      "dataSource": {
+        "kind": "folder",
+        "config": {
+          "path": "1. Project/Market/Project Management",
+          "recursive": true
+        }
+      },
+      "newNotesFolder": "",
+      "views": [
+        {
+          "config": {
+            "fieldConfig": {
+              "path": {
+                "hide": true
+              }
+            },
+            "orderFields": [
+              "name",
+              "종류",
+              "상태",
+              "마감",
+              "긴급"
+            ]
+          },
+          "filter": {
+            "conditions": []
+          },
+          "colors": {
+            "conditions": []
+          },
+          "sort": {
+            "criteria": []
+          },
+          "id": "f9b3e494-fec8-42c3-a570-1c8af2b1797c",
+          "name": "Table",
+          "type": "table"
+        },
+        {
+          "config": {
+            "groupByField": "상태"
+          },
+          "filter": {
+            "conditions": []
+          },
+          "colors": {
+            "conditions": []
+          },
+          "sort": {
+            "criteria": []
+          },
+          "id": "e2327ddc-4206-4ccf-acc9-23267cf8bcf2",
+          "name": "Kanban",
+          "type": "board"
+        },
+        {
+          "config": {
+            "interval": "month"
+          },
+          "filter": {
+            "conditions": []
+          },
+          "colors": {
+            "conditions": []
+          },
+          "sort": {
+            "criteria": []
+          },
+          "id": "f60a497f-006f-49d4-876d-936caa9fd49b",
+          "name": "Calendar",
+          "type": "calendar"
+        }
+      ],
+      "id": "8b80c593-4a00-44ef-8024-86aa1048abbd",
+      "name": "Market"
+    },
+    {
+      "fieldConfig": {},
+      "defaultName": "",
+      "templates": [
+        "1. Project/Cercat/Template.md"
+      ],
+      "excludedNotes": [],
+      "isDefault": false,
+      "dataSource": {
+        "kind": "folder",
+        "config": {
+          "path": "1. Project/Camong/Project Management",
+          "recursive": true
+        }
+      },
+      "newNotesFolder": "",
+      "views": [
+        {
+          "config": {
+            "orderFields": [
+              "name",
+              "path",
+              "마감",
+              "긴급",
+              "완료 여부",
+              "종류"
+            ],
+            "fieldConfig": {
+              "path": {
+                "hide": true
+              },
+              "name": {
+                "width": 209
+              }
+            }
+          },
+          "filter": {
+            "conditions": []
+          },
+          "colors": {
+            "conditions": []
+          },
+          "sort": {
+            "criteria": []
+          },
+          "id": "8c1d0c02-e99e-43f9-9d26-ee0fb5991657",
+          "name": "Table",
+          "type": "table"
+        }
+      ],
+      "id": "421109d8-060a-4180-93a1-4aea2530e759",
+      "name": "Camong"
+    }
+  ],
+  "archives": [],
+  "preferences": {
+    "projectSizeLimit": 1000,
+    "frontmatter": {
+      "quoteStrings": "PLAIN"
+    },
+    "commands": [],
+    "linkBehavior": "open-editor"
+  }
+}

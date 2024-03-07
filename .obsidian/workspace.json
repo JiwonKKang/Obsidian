@@ -1,0 +1,179 @@
+{
+  "main": {
+    "id": "04f31a8bba3c0367",
+    "type": "split",
+    "children": [
+      {
+        "id": "87d258cb660fab04",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "57acbf658c57b2f1",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "1. Project/Univ/임베디드 시스템/1주차/필기.md",
+                "mode": "source",
+                "backlinks": false,
+                "source": false
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "751c6126cf6e5d67",
+    "type": "split",
+    "children": [
+      {
+        "id": "3375ac2d870187bb",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "5f7b5f3bb1edf6c2",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabeticalReverse"
+              }
+            }
+          },
+          {
+            "id": "f0b9e6e3782a8b28",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "개선",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "87116e8369a6ccfd",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 306.5
+  },
+  "right": {
+    "id": "58cd161b9e3ac64e",
+    "type": "split",
+    "children": [
+      {
+        "id": "afa6e6be5c0d3d0c",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "69f669caee556a57",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "1. Project/Univ/임베디드 시스템/1주차/필기.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "ed3b89f58f9fe47c",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              }
+            }
+          },
+          {
+            "id": "8fd1824a66476602",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "1. Project/Univ/임베디드 시스템/1주차/필기.md"
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 299.5,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:퀵 스위처 열기": true,
+      "graph:그래프 뷰 열기": false,
+      "canvas:새 캔버스 만들기": false,
+      "daily-notes:오늘의 데일리 노트 열기": true,
+      "templates:템플릿 삽입": false,
+      "command-palette:명령어 팔레트 열기": true,
+      "obsidian-projects:Open projects": false
+    }
+  },
+  "active": "5f7b5f3bb1edf6c2",
+  "lastOpenFiles": [
+    "1. Project/Univ/임베디드 시스템/1주차",
+    "1. Project/Univ/자료구조/1주차/필기.md",
+    "1. Project/Univ/임베디드 시스템/1주차/필기.md",
+    "1. Project/Univ/임베디드 시스템",
+    "3. Resource/Elastic Search/엘라스틱 서치의 개념.md",
+    "3. Resource/Elastic Search/Pasted image 20240306094205.png",
+    "3. Resource/Elastic Search/Pasted image 20240306094157.png",
+    "1. Project/Univ/빅데이터 시스템 설계/1주차/필기.md",
+    "3. Resource/Elastic Search",
+    "1. Project/Univ/자료구조/1주차",
+    "1. Project/Univ/자료구조",
+    "1. Project/Univ/빅데이터 시스템 설계/1주차/Practice 1 - Practice Environment.pdf",
+    "1. Project/Univ/공업 법규와 창업/1주차/필기.md",
+    "1. Project/Cercat/부딪힌 문제들.md",
+    "1. Project/Immersion.gg/Immersion.gg.md",
+    "1. Project/Cercat/개선 사항.md",
+    "1. Project/Cercat/Cercat.md",
+    "1. Project/Paypay/부딪힌 문제.md",
+    "2. Area/대학/졸업 학점.md",
+    "1. Project/Univ/빅데이터 시스템 설계/1주차/Lecture 1 - Course Overview.pdf",
+    "1. Project/Univ/공업 법규와 창업/1주차",
+    "1. Project/Univ/공업 법규와 창업",
+    "1. Project/Univ/빅데이터 시스템 설계/1주차",
+    "1. Project/Univ/빅데이터 설계/강의 자료",
+    "4. Archive/Images/커밋 메세지 동사.png",
+    "3. Resource/Kafka/Kafka 개념.md",
+    "3. Resource/Git/커밋 메시지 컨벤션.md",
+    "4. Archive/Images/Pasted image 20240222171245.png",
+    "3. Resource/JPA/Fetch Join 을 통한 1 대 N 페이징.md",
+    "1. Project/Cercat/Data.md",
+    "1. Project/TracedIn/TracedIn.md",
+    "1. Project/TracedIn/참고.md",
+    "1. Project/Cercat/Template.md",
+    "1. Project/Cercat/OAuth2 로그인 구현.md",
+    "3. Resource/MSA/헥사고날 아키텍쳐.md",
+    "4. Archive/API-KEYS.md",
+    "3. Resource/MSA/도메인 주도 패턴(DDD, Domain-Driven-Design).md",
+    "3. Resource/Spring Boot/DTO와 도메인을 분리해야 하는 이유.md",
+    "4. Archive/Images/Pasted image 20240219112901.png",
+    "3. Resource/Obsidian/콜아웃 정리.md",
+    "3. Resource/디자인 패턴/전략패턴.md",
+    "무제 파일.canvas"
+  ]
+}

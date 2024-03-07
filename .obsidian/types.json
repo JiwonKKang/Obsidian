@@ -1,0 +1,13 @@
+{
+  "types": {
+    "aliases": "aliases",
+    "cssclasses": "multitext",
+    "tags": "tags",
+    "due": "date",
+    "상태": "checkbox",
+    "마감": "date",
+    "긴급": "checkbox",
+    "완료 여부": "checkbox",
+    "완료여부": "checkbox"
+  }
+}
