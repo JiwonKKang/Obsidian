@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "1. Project/Univ/임베디드 시스템/1주차/필기.md",
+                "file": "1. Project/Univ/자료구조/1주차/필기.md",
                 "mode": "source",
                 "backlinks": false,
                 "source": false
@@ -86,7 +86,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "1. Project/Univ/임베디드 시스템/1주차/필기.md",
+                "file": "1. Project/Univ/자료구조/1주차/필기.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -109,7 +109,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "1. Project/Univ/임베디드 시스템/1주차/필기.md"
+                "file": "1. Project/Univ/자료구조/1주차/필기.md"
               }
             }
           }
@@ -131,11 +131,12 @@
       "obsidian-projects:Open projects": false
     }
   },
-  "active": "5f7b5f3bb1edf6c2",
+  "active": "57acbf658c57b2f1",
   "lastOpenFiles": [
-    "1. Project/Univ/임베디드 시스템/1주차",
     "1. Project/Univ/자료구조/1주차/필기.md",
+    "1. Project/Univ/자료구조/1주차/수업 방식.md",
     "1. Project/Univ/임베디드 시스템/1주차/필기.md",
+    "1. Project/Univ/임베디드 시스템/1주차",
     "1. Project/Univ/임베디드 시스템",
     "3. Resource/Elastic Search/엘라스틱 서치의 개념.md",
     "3. Resource/Elastic Search/Pasted image 20240306094205.png",
@@ -156,7 +157,6 @@
     "1. Project/Univ/공업 법규와 창업/1주차",
     "1. Project/Univ/공업 법규와 창업",
     "1. Project/Univ/빅데이터 시스템 설계/1주차",
-    "1. Project/Univ/빅데이터 설계/강의 자료",
     "4. Archive/Images/커밋 메세지 동사.png",
     "3. Resource/Kafka/Kafka 개념.md",
     "3. Resource/Git/커밋 메시지 컨벤션.md",
