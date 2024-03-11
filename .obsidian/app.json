@@ -10,5 +10,8 @@
   "attachmentFolderPath": "./",
   "newFileLocation": "current",
   "smartIndentList": true,
-  "rightToLeft": false
+  "rightToLeft": false,
+  "readableLineLength": true,
+  "autoPairBrackets": true,
+  "autoPairMarkdown": true
 }
