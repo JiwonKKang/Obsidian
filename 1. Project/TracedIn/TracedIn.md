@@ -11,6 +11,20 @@
 > 	- 카프카 큐잉
 > - 다양한 비즈니스 메트릭에 대해서도 어려워짐
 
+## 아키텍쳐
+
+분산서버 모니터링 서비스의 기본적인 아키텍쳐는 OpenTelemetry를 사용하여 서버의 
+데이터를 측정하고 수집하여 Observabiltiy back-end로 전송
+
+여기서 알수있는 사실은 OpenTelemetry와 Observabiltiy back-end는 별개이고
+
+다시말해 Zipkin, Jaeger등과는 다르고 대신 이런 Observabiltiy back-end에 데이터 전송을 지원합니다.
+
+
+> [!quote] 결론
+> 따라서 우리가 만드려는것은 OpenTelemetry-Observability back-end를 통합한 도구라고 할수 있다.
+
+
 
 ## 메트릭
 
