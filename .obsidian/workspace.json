@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "1. Project/Univ/자료구조/2주차/필기.md",
+                "file": "1. Project/Cercat/부딪힌 문제들.md",
                 "mode": "source",
                 "backlinks": false,
                 "source": false
@@ -86,7 +86,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "1. Project/Univ/자료구조/2주차/필기.md",
+                "file": "1. Project/Cercat/부딪힌 문제들.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -109,7 +109,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "1. Project/Univ/자료구조/2주차/필기.md"
+                "file": "1. Project/Cercat/부딪힌 문제들.md"
               }
             }
           }
@@ -133,10 +133,17 @@
   },
   "active": "679c9da9825d006b",
   "lastOpenFiles": [
-    "1. Project/Univ/자료구조/1주차/수업 방식.md",
-    "1. Project/Univ/자료구조/2주차/필기.md",
-    "1. Project/Univ/자료구조/2주차",
+    "1. Project/Univ/자료구조/2주차/a.out",
+    "1. Project/Univ/자료구조/2주차/intlist.c",
+    "1. Project/Univ/임베디드 시스템/2주차/2주_임베디드시스템.pdf",
+    "1. Project/Univ/임베디드 시스템/2주차/2주_임베디드시스템.pdf.crdownload",
+    "1. Project/Univ/임베디드 시스템/2주차",
+    "1. Project/Cercat/Project Management/무중단 배포 스크립트 구현.md",
+    "1. Project/Cercat/Project Management/Nginx를 통해 분산 서버 로드밸런싱.md",
     "1. Project/Cercat/Project Management/Elastic Search 검색엔진 구현.md",
+    "1. Project/Univ/자료구조/2주차/필기.md",
+    "1. Project/Univ/자료구조/1주차/수업 방식.md",
+    "1. Project/Univ/자료구조/2주차",
     "2. Area/2024/올해의 목표.md",
     "2. Area/취업/취업 목표.md",
     "2. Area/2024",
@@ -146,10 +153,6 @@
     "1. Project/Univ/발표와 토론/4주차/2-1. 발표 불안 극복하기.pdf",
     "1. Project/Univ/발표와 토론/4주차",
     "1. Project/Univ/발표와 토론/3주차/4주차",
-    "1. Project/Univ/발표와 토론/3주차/2. 소통-소개하기.pdf",
-    "1. Project/Univ/발표와 토론/3주차",
-    "1. Project/Univ/발표와 토론/2주차",
-    "1. Project/Univ/발표와 토론",
     "1. Project/Univ/공업 법규와 창업/2주차/필기.md",
     "1. Project/TracedIn/TracedIn.md",
     "1. Project/TracedIn/참고.md",
@@ -169,10 +172,7 @@
     "1. Project/Paypay/부딪힌 문제.md",
     "2. Area/대학/졸업 학점.md",
     "4. Archive/Images/커밋 메세지 동사.png",
-    "3. Resource/Kafka/Kafka 개념.md",
-    "3. Resource/Git/커밋 메시지 컨벤션.md",
     "4. Archive/Images/Pasted image 20240222171245.png",
-    "3. Resource/JPA/Fetch Join 을 통한 1 대 N 페이징.md",
     "4. Archive/Images/Pasted image 20240219112901.png",
     "무제 파일.canvas"
   ]

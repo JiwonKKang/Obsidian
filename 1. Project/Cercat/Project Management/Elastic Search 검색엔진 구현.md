@@ -8,3 +8,5 @@
 
 > [!NOTE] MySQL(RDB)와 Elastic Search 동기화 방법
 > MySQL CDC - Kafka Connector 조합으로 데이터 변경을 캡쳐하여 Elastic Search에 Sync
+
+- Redis를 사용해 최근 검색어 구현
