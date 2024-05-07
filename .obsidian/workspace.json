@@ -4,23 +4,47 @@
     "type": "split",
     "children": [
       {
-        "id": "23c2326f2a92fb3b",
+        "id": "b5c04643c95a428d",
         "type": "tabs",
         "children": [
           {
-            "id": "679c9da9825d006b",
+            "id": "f143ee2801ed6e5b",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "1. Project/Cercat/부딪힌 문제들.md",
+                "file": "2. Area/개발/고민/멘토링 질문 모음.md",
                 "mode": "source",
                 "backlinks": false,
                 "source": false
               }
             }
+          },
+          {
+            "id": "680dd28317682c2c",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "1. Project/Cercat/Data.md",
+                "mode": "source",
+                "backlinks": false,
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "31245e5e60e11b62",
+            "type": "leaf",
+            "state": {
+              "type": "pdf",
+              "state": {
+                "file": "1. Project/Univ/빅데이터 시스템 설계/2주차/Lecture 2 - Introduction to the Big Data 1.pdf"
+              }
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -86,7 +110,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "1. Project/Cercat/부딪힌 문제들.md",
+                "file": "1. Project/Cercat/Data.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -109,7 +133,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "1. Project/Cercat/부딪힌 문제들.md"
+                "file": "1. Project/Cercat/Data.md"
               }
             }
           }
@@ -131,49 +155,55 @@
       "obsidian-projects:Open projects": false
     }
   },
-  "active": "679c9da9825d006b",
+  "active": "680dd28317682c2c",
   "lastOpenFiles": [
-    "1. Project/Univ/자료구조/2주차/a.out",
-    "1. Project/Univ/자료구조/2주차/intlist.c",
-    "1. Project/Univ/임베디드 시스템/2주차/2주_임베디드시스템.pdf",
-    "1. Project/Univ/임베디드 시스템/2주차/2주_임베디드시스템.pdf.crdownload",
-    "1. Project/Univ/임베디드 시스템/2주차",
-    "1. Project/Cercat/Project Management/무중단 배포 스크립트 구현.md",
-    "1. Project/Cercat/Project Management/Nginx를 통해 분산 서버 로드밸런싱.md",
-    "1. Project/Cercat/Project Management/Elastic Search 검색엔진 구현.md",
-    "1. Project/Univ/자료구조/2주차/필기.md",
-    "1. Project/Univ/자료구조/1주차/수업 방식.md",
-    "1. Project/Univ/자료구조/2주차",
-    "2. Area/2024/올해의 목표.md",
-    "2. Area/취업/취업 목표.md",
-    "2. Area/2024",
-    "1. Project/Univ/발표와 토론/2주차/필기.md",
-    "1. Project/Univ/발표와 토론/2주차/1. 의사소통과 말하기.pdf",
-    "1. Project/Univ/발표와 토론/2주차.md",
-    "1. Project/Univ/발표와 토론/4주차/2-1. 발표 불안 극복하기.pdf",
-    "1. Project/Univ/발표와 토론/4주차",
-    "1. Project/Univ/발표와 토론/3주차/4주차",
-    "1. Project/Univ/공업 법규와 창업/2주차/필기.md",
-    "1. Project/TracedIn/TracedIn.md",
-    "1. Project/TracedIn/참고.md",
-    "1. Project/Univ/빅데이터 시스템 설계/2주차/Lecture 2.md",
-    "3. Resource/Java/Effective Java/객체의 생성과 파괴.md",
-    "1. Project/Univ/자료구조/1주차/필기.md",
-    "1. Project/Univ/임베디드 시스템/1주차/필기.md",
-    "3. Resource/Elastic Search/엘라스틱 서치의 개념.md",
-    "3. Resource/Elastic Search/Pasted image 20240306094205.png",
-    "3. Resource/Elastic Search/Pasted image 20240306094157.png",
-    "1. Project/Univ/빅데이터 시스템 설계/1주차/필기.md",
-    "1. Project/Univ/공업 법규와 창업/1주차/필기.md",
+    "1. Project/Univ/빅데이터 시스템 설계/8주차/Practice 8 - Big Data Indexing.pdf",
+    "1. Project/디프만/기술면접 준비.canvas",
+    "4. Archive/Images/Spring MVC 동작원리.png",
+    "4. Archive/Images/클라이언트 요청시 필요한 동작들.png",
+    "1. Project/Univ/공업 법규와 창업/9주차/필기.md",
+    "4. Archive/API-KEYS.md",
+    "무제 파일 2.canvas",
+    "2. Area/개발/고민/멘토링 질문 모음.md",
+    "1. Project/Univ/빅데이터 시스템 설계/중간고사/23-1 빅데시 중간고사(김정훈 교수님) (1).pdf",
+    "1. Project/Univ/공업 법규와 창업/9주차/6장-2 창업과 관련된 경영활동Ⅱ.pdf",
+    "1. Project/Univ/공업 법규와 창업/9주차/6장 -1 창업과 관련된 경영활동Ⅰ.pdf",
+    "1. Project/Univ/공업 법규와 창업/9주차/5장-2 창업 개요 Ⅰ.pdf",
+    "2. Area/나/강지원.md",
+    "2. Area/나",
+    "1. Project/Univ/발표와 토론/7주차/클린 아키텍쳐는 왜 중요할까? - 대본(초본).md",
+    "1. Project/Univ/공업 법규와 창업/9주차",
+    "1. Project/Core/Spring 학습 커리큘럼.md",
     "1. Project/Cercat/부딪힌 문제들.md",
-    "1. Project/Immersion.gg/Immersion.gg.md",
     "1. Project/Cercat/개선 사항.md",
+    "1. Project/디프만/지원서.md",
+    "1. Project/Cercat/Data.md",
     "1. Project/Cercat/Cercat.md",
-    "1. Project/Paypay/부딪힌 문제.md",
-    "2. Area/대학/졸업 학점.md",
-    "4. Archive/Images/커밋 메세지 동사.png",
-    "4. Archive/Images/Pasted image 20240222171245.png",
-    "4. Archive/Images/Pasted image 20240219112901.png",
-    "무제 파일.canvas"
+    "무제 파일 1.canvas",
+    "1. Project/한끼줍쇼/발표 대본.md",
+    "1. Project/디프만",
+    "1. Project/Univ/공업 법규와 창업/발표/발표 대본.md",
+    "1. Project/Univ/공업 법규와 창업/발표/발표 자료.pdf",
+    "1. Project/Univ/공업 법규와 창업/발표/_공법창-발표.pdf",
+    "1. Project/Univ/공업 법규와 창업/3주차/필기.md",
+    "1. Project/Univ/빅데이터 시스템 설계/1주차/정리.md",
+    "1. Project/Univ/빅데이터 시스템 설계/2주차/Lecture 2.md",
+    "1. Project/Univ/빅데이터 시스템 설계/1주차/필기.md",
+    "1. Project/Univ/빅데이터 시스템 설계/7주차/필기.md",
+    "2. Area/개발/고민/유편.md",
+    "1. Project/Univ/자료구조/7주차/Linked List.md",
+    "문제 정리.md",
+    "2. Area/개발/고민/최신기술 사용에 대한 고민.md",
+    "2. Area/개발/고민/코드리뷰.md",
+    "2. Area/개발/고민/코딩 권태기에 대해.md",
+    "1. Project/Univ/자료구조/5주차/시험.md",
+    "1. Project/Univ/발표와 토론/7주차/유지보수.png",
+    "1. Project/Univ/공업 법규와 창업/중간족보/중간족보.jpeg",
+    "4. Archive/Images/Pasted image 20240416061557.png",
+    "4. Archive/Images/Pasted image 20240416061331.png",
+    "4. Archive/Images/Pasted image 20240416055603.png",
+    "4. Archive/Images/Pasted image 20240416055206.png",
+    "4. Archive/Images/Pasted image 20240416054859.png",
+    "4. Archive/Images/Pasted image 20240416053008.png"
   ]
 }

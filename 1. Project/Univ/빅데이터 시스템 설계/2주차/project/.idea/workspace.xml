@@ -7,6 +7,9 @@
     <list default="true" id="87826be5-b4f7-4bcb-a949-8f5412ab6bd3" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/../../../../../.obsidian/plugins/remember-cursor-position/cursor-positions.json" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../../.obsidian/plugins/remember-cursor-position/cursor-positions.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../../../../.obsidian/workspace.json" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../../.obsidian/workspace.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Cercat/Project Management/Elastic Search 검색엔진 구현.md" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../Cercat/Project Management/Elastic Search 검색엔진 구현.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../Cercat/부딪힌 문제들.md" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../Cercat/부딪힌 문제들.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -23,27 +26,36 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../../../.." />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 5
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 5
+}</component>
   <component name="ProjectId" id="2dZaba1YXQTyzSrvhJDt1eFKksv" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "main",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/kangjiwon/Library/Mobile Documents/iCloud~md~obsidian/Documents/Obsidian/1. Project/Univ/빅데이터 시스템 설계/2주차/project&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+    </key>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -53,10 +65,16 @@
       <option name="presentableId" value="Default" />
       <updated>1710218126568</updated>
       <workItem from="1710218128057" duration="1228000" />
+      <workItem from="1710822778736" duration="1136000" />
+      <workItem from="1710824854356" duration="1452000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/project$practice2.coverage" NAME="practice2 Coverage Results" MODIFIED="1710825707001" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/project$practice1.coverage" NAME="practice1 Coverage Results" MODIFIED="1710822792882" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>

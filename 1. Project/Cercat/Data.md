@@ -4,11 +4,11 @@
 
 ```json
 {
-  "subjectResultRequests": [
+  "createSubjectResultRequests": [
     {
       "subjectId": 1,
       "score": 50,
-      "userAnswerRequests": [
+      "createUserAnswerRequests": [
         {"questionId": 1, "selectOptionSeq": 1, "takenTime": 10, "isCorrect": true},
         {"questionId": 2, "selectOptionSeq": 2, "takenTime": 10, "isCorrect": true},
         {"questionId": 3, "selectOptionSeq": 3, "takenTime": 10, "isCorrect": false},
@@ -34,7 +34,7 @@
     {
       "subjectId": 2,
       "score": 50,
-      "userAnswerRequests": [
+      "createUserAnswerRequests": [
         {"questionId": 21, "selectOptionSeq": 1, "takenTime": 10, "isCorrect": true},
         {"questionId": 22, "selectOptionSeq": 2, "takenTime": 10, "isCorrect": true},
         {"questionId": 23, "selectOptionSeq": 3, "takenTime": 10, "isCorrect": true},
@@ -60,7 +60,7 @@
     {
       "subjectId": 3,
       "score": 50,
-      "userAnswerRequests": [
+      "createUserAnswerRequests": [
         {"questionId": 41, "selectOptionSeq": 1, "takenTime": 10, "isCorrect": true},
         {"questionId": 42, "selectOptionSeq": 2, "takenTime": 10, "isCorrect": true},
         {"questionId": 43, "selectOptionSeq": 3, "takenTime": 10, "isCorrect": false},
@@ -85,7 +85,6 @@
     }
   ]
 }
-
 ```
 
 
@@ -120,3 +119,107 @@ GCS_KEY=ewogICJ0eXBlIjogInNlcnZpY2VfYWNjb3VudCIsCiAgInByb2plY3RfaWQiOiAiaGF6ZWwt
 > ```
 
 
+```
+plugins {  
+    id 'java'  
+    id 'org.springframework.boot' version '3.2.1'  
+    id 'io.spring.dependency-management' version '1.1.4'  
+}  
+  
+java {  
+    sourceCompatibility = '17'  
+}  
+  
+subprojects {  
+  
+    group = 'com.cos'  
+    version = '0.0.1'  
+  
+    apply plugin: 'java'  
+    apply plugin: 'java-library'  
+    apply plugin: 'org.springframework.boot'  
+    apply plugin: 'io.spring.dependency-management'  
+  
+    configurations {  
+       compileOnly {  
+          extendsFrom annotationProcessor  
+       }  
+    }  
+    sourceCompatibility = '17'  
+  
+    repositories {  
+       mavenCentral()  
+    }  
+  
+    dependencies {  
+       implementation 'org.springframework.boot:spring-boot-starter-data-jpa'  
+       implementation 'org.springframework.boot:spring-boot-starter-web'  
+  
+       //인증 & 인가  
+       implementation 'org.springframework.boot:spring-boot-starter-security'  
+       implementation 'org.springframework.boot:spring-boot-starter-oauth2-client'  
+  
+       //redis & cache  
+       implementation 'org.springframework.boot:spring-boot-starter-data-redis'  
+       implementation 'org.springframework.boot:spring-boot-starter-cache'  
+  
+       //kakfa  
+       implementation 'org.springframework.kafka:spring-kafka'  
+       testImplementation 'org.springframework.kafka:spring-kafka-test'  
+  
+       //JWT  
+       runtimeOnly 'io.jsonwebtoken:jjwt-jackson:0.11.5'  
+       runtimeOnly 'io.jsonwebtoken:jjwt-impl:0.11.5'  
+       implementation 'io.jsonwebtoken:jjwt-api:0.11.5'  
+       implementation 'com.auth0:java-jwt:4.2.1'  
+  
+       //lombok  
+       compileOnly 'org.projectlombok:lombok:1.18.30'  
+       annotationProcessor 'org.projectlombok:lombok:1.18.30'  
+  
+       //API 문서화 Swagger-UI  
+       implementation 'org.springdoc:springdoc-openapi-starter-webmvc-ui:2.0.2'  
+  
+  
+       //google GCP 버킷  
+       implementation group: 'org.springframework.cloud', name: 'spring-cloud-gcp-starter', version: '1.2.5.RELEASE'  
+       implementation group: 'org.springframework.cloud', name: 'spring-cloud-gcp-storage', version: '1.2.5.RELEASE'  
+  
+       //직렬화 및 역직렬화 관련  
+       implementation 'com.fasterxml.jackson.datatype:jackson-datatype-jsr310'  
+       implementation group: 'com.fasterxml.jackson.core', name: 'jackson-databind', version: '2.15.2'  
+  
+       //elastic search  
+       implementation 'org.springframework.boot:spring-boot-starter-data-elasticsearch'  
+       implementation 'co.elastic.clients:elasticsearch-java:8.9.0'  
+  
+       //Database 관련  
+       runtimeOnly 'com.h2database:h2'  
+       runtimeOnly 'com.mysql:mysql-connector-j'  
+  
+       //Querydsl 추가  
+       implementation 'com.querydsl:querydsl-jpa:5.0.0:jakarta'  
+       annotationProcessor "com.querydsl:querydsl-apt:${dependencyManagement.importedProperties['querydsl.version']}:jakarta"  
+       annotationProcessor "jakarta.annotation:jakarta.annotation-api"  
+       annotationProcessor "jakarta.persistence:jakarta.persistence-api"  
+  
+       annotationProcessor 'org.springframework.boot:spring-boot-configuration-processor'  
+       annotationProcessor 'org.projectlombok:lombok'  
+       testCompileOnly 'org.projectlombok:lombok'  
+       testAnnotationProcessor 'org.projectlombok:lombok'  
+       testImplementation 'org.springframework.boot:spring-boot-starter-test'  
+       testImplementation 'org.springframework.security:spring-security-test'  
+    }  
+  
+    tasks.named('test') {  
+       useJUnitPlatform()  
+    }  
+  
+}  
+  
+project(':module-domain') {  
+    bootJar {  
+       enabled = false  
+    }  
+}
+```

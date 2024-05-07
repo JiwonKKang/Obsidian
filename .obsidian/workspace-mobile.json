@@ -19,8 +19,22 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "ba441fba40ea6c6b",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "1. Project/디프만/지원서.md",
+                "mode": "source",
+                "backlinks": false,
+                "source": false
+              }
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -102,7 +116,7 @@
         "state": {
           "type": "outgoing-link",
           "state": {
-            "file": "1. Project/Cercat/부딪힌 문제들.md",
+            "file": "1. Project/디프만/지원서.md",
             "linksCollapsed": false,
             "unlinkedCollapsed": true
           }
@@ -114,7 +128,7 @@
         "state": {
           "type": "outline",
           "state": {
-            "file": "1. Project/Cercat/부딪힌 문제들.md"
+            "file": "1. Project/디프만/지원서.md"
           }
         }
       }
@@ -132,10 +146,26 @@
       "obsidian-projects:Open projects": false
     }
   },
-  "active": "77a322f7366e055c",
+  "active": "ba441fba40ea6c6b",
   "lastOpenFiles": [
-    "1. Project/Cercat/Project Management/모의고사 문제 Redis 캐싱.md",
+    "1. Project/한끼줍쇼/코어스 면접발표.pdf",
+    "1. Project/한끼줍쇼/발표 대본.md",
+    "1. Project/Univ/빅데이터 시스템 설계/중간고사/빅데시 중간고사 예상문제(답지).pdf",
+    "1. Project/Univ/빅데이터 시스템 설계/2주차/Lecture 2 - Introduction to the Big Data 1.pdf",
+    "1. Project/Univ/빅데이터 시스템 설계/2주차/Lecture 2.md",
+    "1. Project/Univ/빅데이터 시스템 설계/3주차/Lecture 3 - BIg Data Storage.pdf",
+    "1. Project/Univ/빅데이터 시스템 설계/중간고사/빅데시 중간고사 예상문제.pdf",
+    "1. Project/Univ/빅데이터 시스템 설계/중간고사/23-1 빅데시 중간고사(김정훈 교수님) (1).pdf",
+    "1. Project/Univ/자료구조/1주차/수업 방식.md",
+    "1. Project/Univ/자료구조/1주차/필기.md",
+    "1. Project/Univ/발표와 토론/7주차/클린 아키텍쳐는 왜 중요할까? - 대본(초본).md",
     "1. Project/Cercat/개선 사항.md",
+    "1. Project/Cercat/부딪힌 문제들.md",
+    "1. Project/Univ/공업 법규와 창업/3주차/필기.md",
+    "1. Project/Univ/공업 법규와 창업/중간족보/봉희쌤.pdf",
+    "1. Project/Univ/공업 법규와 창업/5주차/필기.md",
+    "1. Project/Univ/발표와 토론/3주차/필기.md",
+    "1. Project/Cercat/Project Management/모의고사 문제 Redis 캐싱.md",
     "Template"
   ]
 }

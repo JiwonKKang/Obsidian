@@ -1,0 +1,25 @@
+{
+	"nodes":[
+		{"id":"f7a5f7f23d8fca13","type":"text","text":"# Servlet Container\n\n*구현되어있는 서블릿 클래스의 규칙에 맞게 생성, 초기화, 호출, 종료하는 생명주기를 관리한다. 서블릿 컨테이너는 클라이언트의 요청을 받고 응답해야하기때문에 Web server와 웹소켓으로 통신한다.*\n\n\n1. 클라이언트의 요청에 맞는 서블릿을 찾음\n2. 해당 서블릿에서 service() 메서드를 호출하고 GET/POST인지 여부에 따라 doGet(), doPost() 호출\n3. 동적인 웹페이지를 생성하여 HttpServletResponse에 담아 반환\n4. 클라이언트에게 최종적으로 반환한뒤에 HttpServletResponse, HttpServletRequest 소멸\n\n\n톰캣을 서블릿 컨테이너라고 많이들 부르지만 정확히는 톰캣은 Web server를 내장하기때문에 WAS라고 부르는게 정확하다.\n서블릿 컨테이너는 개발자가 비즈니스로직에만 집중할수있도록 그외의 필요한 작업들을 모두 해준다.\n<br>\n<br>\n> [!note] Spring MVC가 없던 시절\n> \bSpring이 없던 시절에는 각 요청 URL마다 서블릿을 생성하고 web.xml로 관리\n> -> 중복되는 코드도 증가, 유지보수성 감소\n\n\n","x":-960,"y":-440,"width":1000,"height":700},
+		{"id":"ff042e6363a036d8","type":"file","file":"4. Archive/Images/클라이언트 요청시 필요한 동작들.png","x":-950,"y":-900,"width":350,"height":437},
+		{"id":"236537942593acd3","type":"text","text":"## 멀티쓰레딩 기능\n\n- 서블릿 컨테이너는 요청이 들어올때마다 스레드를 생성하여 처리한다 - 1 request per 1 thread\n- 서블릿 인스턴스는 싱글톤으로 생성되며 Thread-safe 하지않기때문에 무상태 혹은 읽기 전용상태여야한다","x":-414,"y":-800,"width":454,"height":190},
+		{"id":"3a97d6b5c4cd1b48","type":"text","text":"# Web Server\n\n톰캣에 내장된 Web Server","x":-1340,"y":-146,"width":280,"height":120},
+		{"id":"5098336a953bf9a8","type":"text","text":"# Web Server\n\nNginx, Apache\n\n- 로드밸런싱\n- 보안 강화","x":-1660,"y":-176,"width":220,"height":180},
+		{"id":"e5a11af8bd292d43","type":"text","text":"# Client","x":-1860,"y":-116,"width":147,"height":60},
+		{"id":"4c8de0d5703cecfc","type":"text","text":"## Servlet의 생명주기\n\n1. 요청이 들어왔을때 서블릿 컨테이너가 해당 서블릿이 메모리에 있는지 확인한뒤에 메모리에 없다면 init() 메서드를 통해 적재 \n2. 클라이언트 요청에 따라 service() 메서드에서 doGet()/doPost()로 분기\n3. 서블릿 컨테이너가 서블릿에 종료요청을 하면destroy() 메서드가 실행되고 이후 GC에 의해 제거됨\n\n- 서블릿과 java 일반 객체와의 차이점은 둘 모두 JVM에서 호출방식은 같지만 서블릿은 main메서드를 통해 실행되지않고, 서블릿 컨테이너에의해 실행된다. 서블릿 컨테이너가 web.xml을 읽고 서블릿 클래스를 클래스 로더에 등록","x":160,"y":-35,"width":605,"height":295},
+		{"id":"3ba8426d3950556f","type":"text","text":"# Servlet\n\n클라이언트의 요청을 처리하고 그 결과를 다시 클라이언트에게 반환하는 Servlet 클래스의 구현 규칙을 지킨 자바 프로그램\n\n- 서블릿을 사용하면 웹페이지를 동적으로 생성하여 반환할수있다.","x":160,"y":-380,"width":440,"height":234},
+		{"id":"4d66e5c7c05d6502","type":"text","text":"# Spring MVC\n\n## 프론트 컨트롤러 패턴\n\n모든 요청을 프론트 컨트롤러(하나의 서블릿)에게 보내고 프론트 컨트롤러가 각 요청에 맞는 컨트롤러를 찾아 호출 -> 공통 기능을 프론트 컨트롤러에서 처리\n\n\n> [!Quote] Dispatcher Servlet\n> Spring MVC에서 프론트 컨트롤러\n\n\n1. DispatcherServlet으로 클라이언트의 웹 요청이 들어온다.\n2. 웹 요청을 Handler Mapping에 위임하여 해당 요청을 처리할 Handler(Controller)를 탐색한다.\n3. 찾은 Handler를 실행할 수 있는 HandlerAdapter를 탐색한다.\n4. 찾은 Handler Adapter를 사용해서 Handler의 메소드를 실행한다.\n5. Handler의 반환 값은 Model과 View이다.\n6. View 이름을 ViewResolver에게 전달하고, ViewResolver는 해당하는 View 객체를 전달한다.\n7. DispatcherServlet은 View에게 Model을 전달하고 화면 표시를 요청한다. 이때, Model이 null이면 View를 그대로 사용하고, 그렇지 않으면 View에 Model 데이터를 렌더링한다.\n8. 최종적으로 DispatcherServlet은 View 결과(HttpServletResponse)를 클라이언트에게 반환한다.","x":-1060,"y":430,"width":594,"height":690},
+		{"id":"0ba6fcb0aaf5b3d1","type":"file","file":"4. Archive/Images/Spring MVC 동작원리.png","x":-360,"y":500,"width":708,"height":462}
+	],
+	"edges":[
+		{"id":"efbbf2bbcdf3a1a6","fromNode":"f7a5f7f23d8fca13","fromSide":"right","toNode":"4c8de0d5703cecfc","toSide":"left"},
+		{"id":"b6024afd0a1995dc","fromNode":"f7a5f7f23d8fca13","fromSide":"top","toNode":"236537942593acd3","toSide":"bottom"},
+		{"id":"0bbe3521942ec256","fromNode":"f7a5f7f23d8fca13","fromSide":"top","toNode":"ff042e6363a036d8","toSide":"right"},
+		{"id":"03212353c031821a","fromNode":"3a97d6b5c4cd1b48","fromSide":"right","toNode":"f7a5f7f23d8fca13","toSide":"left"},
+		{"id":"7418f4f639591a52","fromNode":"5098336a953bf9a8","fromSide":"right","toNode":"3a97d6b5c4cd1b48","toSide":"left"},
+		{"id":"7fd14667e5caa3e6","fromNode":"e5a11af8bd292d43","fromSide":"right","toNode":"5098336a953bf9a8","toSide":"left"},
+		{"id":"4a77559a0657f356","fromNode":"f7a5f7f23d8fca13","fromSide":"right","toNode":"3ba8426d3950556f","toSide":"left"},
+		{"id":"392606b2241c9fd6","fromNode":"f7a5f7f23d8fca13","fromSide":"bottom","toNode":"4d66e5c7c05d6502","toSide":"top"},
+		{"id":"11389d028303fc4f","fromNode":"4d66e5c7c05d6502","fromSide":"right","toNode":"0ba6fcb0aaf5b3d1","toSide":"left"}
+	]
+}
