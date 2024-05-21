@@ -90,7 +90,7 @@
 
 #### 기타
 > [!NOTE] 운영환경 카카오 로그인 URI 
-> http://cercat.p-e.kr/oauth2/authorization/kakao
+> http://cercat.o-r.kr/oauth2/authorization/kakao
 
 
 > [!NOTE] 로컬 카카오 로그인 URI

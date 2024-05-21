@@ -1,7 +1,7 @@
 {
 	"nodes":[
 		{"id":"f7a5f7f23d8fca13","type":"text","text":"# Servlet Container\n\n*구현되어있는 서블릿 클래스의 규칙에 맞게 생성, 초기화, 호출, 종료하는 생명주기를 관리한다. 서블릿 컨테이너는 클라이언트의 요청을 받고 응답해야하기때문에 Web server와 웹소켓으로 통신한다.*\n\n\n1. 클라이언트의 요청에 맞는 서블릿을 찾음\n2. 해당 서블릿에서 service() 메서드를 호출하고 GET/POST인지 여부에 따라 doGet(), doPost() 호출\n3. 동적인 웹페이지를 생성하여 HttpServletResponse에 담아 반환\n4. 클라이언트에게 최종적으로 반환한뒤에 HttpServletResponse, HttpServletRequest 소멸\n\n\n톰캣을 서블릿 컨테이너라고 많이들 부르지만 정확히는 톰캣은 Web server를 내장하기때문에 WAS라고 부르는게 정확하다.\n서블릿 컨테이너는 개발자가 비즈니스로직에만 집중할수있도록 그외의 필요한 작업들을 모두 해준다.\n<br>\n<br>\n> [!note] Spring MVC가 없던 시절\n> \bSpring이 없던 시절에는 각 요청 URL마다 서블릿을 생성하고 web.xml로 관리\n> -> 중복되는 코드도 증가, 유지보수성 감소\n\n\n","x":-960,"y":-440,"width":1000,"height":700},
-		{"id":"ff042e6363a036d8","type":"file","file":"4. Archive/Images/클라이언트 요청시 필요한 동작들.png","x":-950,"y":-900,"width":350,"height":437},
+		{"id":"ff042e6363a036d8","type":"file","file":"4. Archive/Images/클라이언트 요청시 필요한 동작들.png","x":-950,"y":-900,"width":350,"height":436},
 		{"id":"236537942593acd3","type":"text","text":"## 멀티쓰레딩 기능\n\n- 서블릿 컨테이너는 요청이 들어올때마다 스레드를 생성하여 처리한다 - 1 request per 1 thread\n- 서블릿 인스턴스는 싱글톤으로 생성되며 Thread-safe 하지않기때문에 무상태 혹은 읽기 전용상태여야한다","x":-414,"y":-800,"width":454,"height":190},
 		{"id":"3a97d6b5c4cd1b48","type":"text","text":"# Web Server\n\n톰캣에 내장된 Web Server","x":-1340,"y":-146,"width":280,"height":120},
 		{"id":"5098336a953bf9a8","type":"text","text":"# Web Server\n\nNginx, Apache\n\n- 로드밸런싱\n- 보안 강화","x":-1660,"y":-176,"width":220,"height":180},
@@ -9,7 +9,10 @@
 		{"id":"4c8de0d5703cecfc","type":"text","text":"## Servlet의 생명주기\n\n1. 요청이 들어왔을때 서블릿 컨테이너가 해당 서블릿이 메모리에 있는지 확인한뒤에 메모리에 없다면 init() 메서드를 통해 적재 \n2. 클라이언트 요청에 따라 service() 메서드에서 doGet()/doPost()로 분기\n3. 서블릿 컨테이너가 서블릿에 종료요청을 하면destroy() 메서드가 실행되고 이후 GC에 의해 제거됨\n\n- 서블릿과 java 일반 객체와의 차이점은 둘 모두 JVM에서 호출방식은 같지만 서블릿은 main메서드를 통해 실행되지않고, 서블릿 컨테이너에의해 실행된다. 서블릿 컨테이너가 web.xml을 읽고 서블릿 클래스를 클래스 로더에 등록","x":160,"y":-35,"width":605,"height":295},
 		{"id":"3ba8426d3950556f","type":"text","text":"# Servlet\n\n클라이언트의 요청을 처리하고 그 결과를 다시 클라이언트에게 반환하는 Servlet 클래스의 구현 규칙을 지킨 자바 프로그램\n\n- 서블릿을 사용하면 웹페이지를 동적으로 생성하여 반환할수있다.","x":160,"y":-380,"width":440,"height":234},
 		{"id":"4d66e5c7c05d6502","type":"text","text":"# Spring MVC\n\n## 프론트 컨트롤러 패턴\n\n모든 요청을 프론트 컨트롤러(하나의 서블릿)에게 보내고 프론트 컨트롤러가 각 요청에 맞는 컨트롤러를 찾아 호출 -> 공통 기능을 프론트 컨트롤러에서 처리\n\n\n> [!Quote] Dispatcher Servlet\n> Spring MVC에서 프론트 컨트롤러\n\n\n1. DispatcherServlet으로 클라이언트의 웹 요청이 들어온다.\n2. 웹 요청을 Handler Mapping에 위임하여 해당 요청을 처리할 Handler(Controller)를 탐색한다.\n3. 찾은 Handler를 실행할 수 있는 HandlerAdapter를 탐색한다.\n4. 찾은 Handler Adapter를 사용해서 Handler의 메소드를 실행한다.\n5. Handler의 반환 값은 Model과 View이다.\n6. View 이름을 ViewResolver에게 전달하고, ViewResolver는 해당하는 View 객체를 전달한다.\n7. DispatcherServlet은 View에게 Model을 전달하고 화면 표시를 요청한다. 이때, Model이 null이면 View를 그대로 사용하고, 그렇지 않으면 View에 Model 데이터를 렌더링한다.\n8. 최종적으로 DispatcherServlet은 View 결과(HttpServletResponse)를 클라이언트에게 반환한다.","x":-1060,"y":430,"width":594,"height":690},
-		{"id":"0ba6fcb0aaf5b3d1","type":"file","file":"4. Archive/Images/Spring MVC 동작원리.png","x":-360,"y":500,"width":708,"height":462}
+		{"id":"0ba6fcb0aaf5b3d1","type":"file","file":"4. Archive/Images/Spring MVC 동작원리.png","x":-360,"y":500,"width":708,"height":462},
+		{"id":"5e7b9e76315f98f7","type":"text","text":"## 기술면접\n\n1. 디자이너와 협업한 경험이 있는가\n2. 사용자가 있는 서비스를 만들어 본 경험이 있는가\n3. RestAPI가 무엇인가\n4. Session이 어떻게 동작하는가\n5. 왜 웹서버는 모든 정보를 저장하지 않는가\n6. redis에 관해서\n7. ELK에 관해서\n8. 멀티모듈구조가 유지보수성을 어떻게 높이는지\n9. 무중단 배포 파이프라인을 어떻게 구성했는지\n10. 순수한 도메인모듈이 가져오는 이점과 트레이드오프\n11. Debezium CDC로 동기화한 \n12. DB관련해서\n13. nginx와 리버스 프록시에 대해 - Nginx를 사용한 이유\n14. redis, kafka와 다른 기술들의 차이점\n15. import들의 대해","x":-2800,"y":-690,"width":358,"height":574},
+		{"id":"b30df362a5771bfa","type":"text","text":"## 인성면접\n\n1. 팀원과 어떻게 협업해 나갈것인가?\n2. 협업에서 중요시 여기는 것\n3. 함께하고 싶지 않은 팀원 유형\n4. 그러한 유형의 팀원과 프로젝트를 한다면 성공적으로 이끌어나가는 방법이 무엇일지\n5. 동료들에게 받은 평가 중 긍정 평가와 피드백 평가","x":-2412,"y":-690,"width":344,"height":574},
+		{"id":"8262d7ec151f2125","type":"text","text":"### 넥스터즈에서 얻어가고 싶은점\n\n저를 안지 얼마안되었거나 처음 본사람들에게서 굉장히 많이 듣었던 말이 영혼이 없다, 무섭다같은 말을 많이 들었다.\n\n개강총회같은 술자리에서 \"어 왜 술안먹어?\"라고하면 한숨쉬면서 술을 따르거나같은 에피소드가있다.\n\n이후에 시간이 지나면 그냥 사람 말투가 그런거구나, 사람이 그냥 맹한거구나라고 다들 알게되는데\n\n넥스터즈에서의 다양한 사람들과의 협업을 통해 \"커뮤니케이션 스킬\"을 배우고 성장하고싶었다. \n\n만약 넥스터즈에 들어가게된다면 비록 현재는 커뮤니케이션 스킬을 좋지못하더라도 넥스터즈에서 있을 협업활동에 적극적으로 참여하며 팀원들에게 절대 민폐가 되지않을거라고 단언합니다.\n\n그리고 커뮤니케이션 스킬을 많이 향상시켜서 이후 넥스터즈 기수에도 지원하여 협업하고싶다.\n\n\n","x":-2462,"y":80,"width":444,"height":555}
 	],
 	"edges":[
 		{"id":"efbbf2bbcdf3a1a6","fromNode":"f7a5f7f23d8fca13","fromSide":"right","toNode":"4c8de0d5703cecfc","toSide":"left"},
@@ -20,6 +23,7 @@
 		{"id":"7fd14667e5caa3e6","fromNode":"e5a11af8bd292d43","fromSide":"right","toNode":"5098336a953bf9a8","toSide":"left"},
 		{"id":"4a77559a0657f356","fromNode":"f7a5f7f23d8fca13","fromSide":"right","toNode":"3ba8426d3950556f","toSide":"left"},
 		{"id":"392606b2241c9fd6","fromNode":"f7a5f7f23d8fca13","fromSide":"bottom","toNode":"4d66e5c7c05d6502","toSide":"top"},
-		{"id":"11389d028303fc4f","fromNode":"4d66e5c7c05d6502","fromSide":"right","toNode":"0ba6fcb0aaf5b3d1","toSide":"left"}
+		{"id":"11389d028303fc4f","fromNode":"4d66e5c7c05d6502","fromSide":"right","toNode":"0ba6fcb0aaf5b3d1","toSide":"left"},
+		{"id":"6265166bace1c02b","fromNode":"b30df362a5771bfa","fromSide":"bottom","toNode":"8262d7ec151f2125","toSide":"top"}
 	]
 }
